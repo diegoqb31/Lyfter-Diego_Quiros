@@ -1,0 +1,19 @@
+Ejercicio #1
+
+1. Inicio
+2. Definir precio_de_producto
+3. Definir descuento = 0
+4. Definir precio_final
+5. Mostrar “Ingrese el precio del producto”
+6. Pedir precio_de_producto
+7. Si (precio_de_producto > 0 Y precio_de_producto < 100) entonces
+    1. descuento = precio_de_producto * 0.02
+8. Sino si (precio_de_producto >= 100) entonces
+    1. descuento = precio_de_producto * 0.10
+9. Sino
+    1. Mostrar “Precio inválido”
+10. FinSi 
+11. precio_final = precio_de_producto - descuento
+12. Mostrar “El precio final es “
+13. Mostrar precio_final
+14. Fin
