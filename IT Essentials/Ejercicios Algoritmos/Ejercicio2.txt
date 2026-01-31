@@ -1,0 +1,32 @@
+2. Cree un algoritmo que describa su rutina diaria. Use condiciones, condiciones multiples y ciclos.
+
+1. Inicio
+2. Verificar el tipo de día
+
+3. Si es día laboral Y es entre semana:
+    1. Despertarse a las 7:00 a.m.
+    2. Preparar desayuno
+    3. Ducharse
+
+    4. Mientras esté en horario laboral:
+        1. Si hay tareas pendientes Y hay energía:
+            1. Trabajar o estudiar
+        2. Sino:
+            1. Tomar un descanso corto
+
+    5. Ir al gym
+
+4. Sino:
+    1. Despertarse a las 9:00 a.m.
+    2. Preparar desayuno
+    3. Ducharse
+    4. Si hay pendientes personales O hay que hacer compras:
+        1. Realizar diligencias
+    5. Sino:
+        1. Estudiar o descansar
+    6. Ir al gym
+
+5. Preparar la cena
+6. Ducharse
+7. Rutina de sueño
+8. Fin

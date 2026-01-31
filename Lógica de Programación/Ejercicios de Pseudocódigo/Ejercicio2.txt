@@ -1,0 +1,17 @@
+Ejercicio #2 
+
+1. Inicio
+2. Definir tiempo_en_segundos
+3. Definir segundos_faltantes
+4. Mostrar “Ingrese el tiempo en segundos”
+5. Pedir tiempo_en_segundos
+6. Si (tiempo_en_segundos < 600) entonces
+    1. segundos_faltantes = 600 - tiempo_en_segundos
+    2. Mostrar “El tiempo faltante en segundos para llegar a 10 minutos es”
+    3. Mostrar segundos_faltantes
+7. Sino si(tiempo_en_segundos > 600) entonces
+    1. Mostrar “Mayor”
+8. Sino 
+    1. Mostrar “Igual”
+9. FinSi
+10. Fin
