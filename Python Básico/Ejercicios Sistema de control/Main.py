@@ -52,7 +52,7 @@ def start_menu( ):
                     print("No hay estudiantes agregados.")
                     input("Presione Enter para continuar...")
                 else:
-                    Actions.calculate_total_averages(students_list)
+                    print(f"Promedio del total de alumnos: {Actions.calculate_total_averages(students_list)}\n")
                     input("\nPresione Enter para continuar...")
                 
             case 5:

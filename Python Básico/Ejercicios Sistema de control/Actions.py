@@ -187,7 +187,7 @@ def calculate_average(student):
     return ((student['spanish'] + student['english'] + student['social'] + student['science']) / 4)
 
 
-def calculate_total_averages(students_list):
+def calculate_and_show_averages(students_list):
     """
     Se encarga de llamar a la funcion que calcula el promedio de cada estudiante, y muestra el promedio de todos los estudiantes, esto uno por uno.
 
@@ -203,6 +203,26 @@ def calculate_total_averages(students_list):
         for student in students_list:
             print(f"\nEstudiante: {student['name']} {student['last_name']} - Seccion: {student['group']}")
             print(f"Promedio: {calculate_average(student)}")
+
+
+def calculate_total_averages(students_list):
+    """
+    Se encarga de llamar a la funcion que calcula el promedio de cada estudiante, y realiza un calculo final de todos los promedios
+
+    Parámetros:
+        students_list (list): Lista de estudiantes.
+
+    Retorna:
+        Retorna el promedio general de todos los estudiantes.
+    """
+    sum_averages = 0
+    students_quantity = len(students_list)
+    if len(students_list) == 0:
+        print("No hay estudiantes para calcular su promedio.\n")
+    else:
+        for student in students_list:
+            sum_averages += calculate_average(student)
+    return sum_averages / students_quantity
 
 
 def top3_grades(students_list):
@@ -226,4 +246,4 @@ def top3_grades(students_list):
     top.sort(key=lambda s: s['average'], reverse=True)
     top = top[:3]
     
-    calculate_total_averages(top)
+    calculate_and_show_averages(top)
