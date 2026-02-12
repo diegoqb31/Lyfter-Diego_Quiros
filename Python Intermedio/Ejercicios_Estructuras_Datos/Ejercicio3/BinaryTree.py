@@ -3,7 +3,7 @@ from Node import Node
 class BinaryTree:
     
     def __init__(self):
-        root = None
+        self.root = None
 
     def insert(self, new_node : Node):
         
@@ -16,7 +16,7 @@ class BinaryTree:
                     
                     if current_node.left == None :
                         current_node.left = new_node
-                        current_node = None
+                        break
                     else:
                         current_node = current_node.left
                         
@@ -24,16 +24,20 @@ class BinaryTree:
                     
                     if current_node.right == None:
                         current_node.right = new_node
-                        current_node = None
+                        break
                     else:
                         current_node = current_node.right
         else:
             
             self.root = new_node
-        
-        
-    def print_structure(self, current_node):
+    
+    
+    def print_structure(self):
+        self.print_structure_recursive(self.root)
+    
+    
+    def print_structure_recursive(self, current_node):
         if current_node is not None:
-            self.print_structure(current_node.left)
+            self.print_structure_recursive(current_node.left)
             print(current_node.data)
-            self.print_structure(current_node.right)
+            self.print_structure_recursive(current_node.right)
